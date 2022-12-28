@@ -55,7 +55,7 @@ steps:
     publishWebProjects: false
     projects: 'src/TechFabricSln/TechFabricSln.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/TechFabricSln/'
-    zipAfterPublish: false
+    zipAfterPublish: true
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish test --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
